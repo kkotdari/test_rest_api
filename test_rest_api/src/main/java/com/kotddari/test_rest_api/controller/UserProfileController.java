@@ -24,7 +24,7 @@ public class UserProfileController {
 	
 	@GetMapping("/hello/{id}")
 	public String getHello(@PathVariable("id") String id) {
-		return "Hello, " + id;
+		return "♥ I love you, " + id + " ♥";
 	}
 	
 	@GetMapping("/user/{id}")
