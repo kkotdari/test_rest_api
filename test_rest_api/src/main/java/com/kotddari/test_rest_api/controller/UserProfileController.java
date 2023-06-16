@@ -39,7 +39,6 @@ public class UserProfileController {
 	
 	@PostMapping("/user/{id}")
 	public void postUserProfile(@PathVariable("id") String id, @RequestParam("name") String name, @RequestParam("phone") String phone, @RequestParam("address") String address){
-		System.out.println("	로그: insertUserProfile");
 		mapper.insertUserProfile(id, name, phone, address);
 	}
 	
